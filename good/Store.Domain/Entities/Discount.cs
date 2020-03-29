@@ -10,8 +10,8 @@ namespace Store.Domain.Entities
             ExpireDate = expireDate;
         }
 
-        public decimal Amount { get; set; }
-        public DateTime ExpireDate { get; set; }
+        public decimal Amount { get; private set; }
+        public DateTime ExpireDate { get; private set; }
 
         public bool IsValid()
         {
