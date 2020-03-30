@@ -13,7 +13,7 @@ namespace Store.Domain.Queries
 
         public static Expression<Func<Product, bool>> GetInactiveProducts()
         {
-            return x => x.Invalid == false;
+            return x => x.Active == false;
         }
     }
 }
