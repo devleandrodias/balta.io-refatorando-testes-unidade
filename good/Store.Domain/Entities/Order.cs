@@ -7,7 +7,7 @@ namespace Store.Domain.Entities
 {
     public class Order : Entity
     {
-        public Order(Customer customer, decimal deliveryFree, IList<OrderItem> items, Discount discount)
+        public Order(Customer customer, decimal deliveryFree, Discount discount)
         {
             AddNotifications(new Contract()
                 .Requires()
