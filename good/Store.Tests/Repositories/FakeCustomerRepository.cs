@@ -5,7 +5,7 @@ namespace Store.Tests.Repositories
 {
     public class FakeCustomerRepository : ICustomerRepository
     {
-        public Customer GetCustomer(string document)
+        public Customer Get(string document)
         {
             if (document == "12345678911")
                 return new Customer("Bruce Wayne", "batman@gmail.com");
